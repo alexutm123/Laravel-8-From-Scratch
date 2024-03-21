@@ -5,26 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
    
-    <title>Document</title>
+    <title>MY Blog</title>
 </head>
 <body>
+    <?php foreach($posts as $post) :?>
    <article>
-    <h1><a href="/posts/my-first-post">My First Post</a></h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates pariatur beatae, saepe, aspernatur error voluptate, ullam odit sequi labore reprehenderit quos. Provident rerum veniam molestias repellat, non quis cum nihil?
-    </p>
+<?= $post ?>
+   
    </article>
-   <article>
-   <h1><a href="/posts/my-second-post">My Second Post</a></h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates pariatur beatae, saepe, aspernatur error voluptate, ullam odit sequi labore reprehenderit quos. Provident rerum veniam molestias repellat, non quis cum nihil?
-    </p>
-   </article>
-   <article>
-   <h1><a href="/posts/My-third-post">My Third Post</a></h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates pariatur beatae, saepe, aspernatur error voluptate, ullam odit sequi labore reprehenderit quos. Provident rerum veniam molestias repellat, non quis cum nihil?
-    </p>
-   </article>
+  <?php endforeach; ?>
 </body>
 </html>
