@@ -8,26 +8,8 @@ use Spatie\YamlFrontMatter\YamlFrontMatter;
 
 Route::get('/', function () {
  
-
-
-    // $posts=array_map(function($file)
-    // {
-    //     $document=YamlFrontMatter::parseFile($file);
-
-    //     return new Post(
-    //         $document->title,
-    //         $document->excerpt,
-    //         $document->date,
-    //         $document->slug,
-    //         $document-> body(),
-            
-    //     );
-    // },$files);
-   
-    
-
     return view('posts',[
-        'posts'=>Post::all()
+        'posts'=>Post::with('category')->get()
     ]);
    
 });
