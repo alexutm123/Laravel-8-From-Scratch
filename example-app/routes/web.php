@@ -15,6 +15,11 @@ Route::get('/', function () {
    
 });
 //sdsdssd
+//sdsdssd
+//sdsdssd
+//sdsdssd
+//sdsdssd
+//sdsdssd
 
 Route::get('posts/{post:slug}', function (Post $post) {
     
